@@ -9,6 +9,10 @@ public class App {
 				"Spring-Module.xml");
 
 		HelloWorld obj = (HelloWorld) context.getBean("helloBean");
+		obj.setName("Ramesh");
 		obj.printHello();
+		
+		HelloWorld obj1 = (HelloWorld) context.getBean("helloBean");
+		obj1.printHello();
 	}
 }

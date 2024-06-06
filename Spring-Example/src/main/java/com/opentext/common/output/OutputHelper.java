@@ -7,6 +7,15 @@ public class OutputHelper {
 	{
 		this.generateOutput=generateOutput;
 	}
+	
+
+	public void setGenerateOutput(GenerateOutput generateOutput) {
+		this.generateOutput = generateOutput;
+	}
+
+
+
+
 
 	public void generateOutput()
 	{

@@ -8,6 +8,10 @@
 		<property name="name" value="Sameer" />
 	</bean>
 	
+	<bean id="helloBeanNew" parent="helloBean">
+		
+	</bean>
+	
 	<bean id="jioSim" class="com.opentext.common.sim.Jio">
 	
 	</bean>
@@ -30,5 +34,7 @@
 	<constructor-arg ref="csvOutput"></constructor-arg>
 		
 	</bean>
+
+
 
 </beans>
