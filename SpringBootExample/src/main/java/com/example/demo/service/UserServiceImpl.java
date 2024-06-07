@@ -29,6 +29,16 @@ public class UserServiceImpl implements UserService {
 		else
 			return null;
 	}
+	
+	@Override
+	public Optional<User> findByIdForOptional(Integer id) {
+		// TODO Auto-generated method stub
+		Optional<User> optional=userRepository.findById(id);
+		if(optional.isPresent())
+		return optional;
+		else
+			return optional;
+	}
 
 	@Override
 	public User save(User user) {

@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.example.demo.model.User;
 
@@ -14,5 +15,6 @@ public interface UserService {
 	//aaditional
 	List<User> findByMobile(String mobile); 
 	List<User> findByEmailId(String emailId);
+	Optional<User> findByIdForOptional(Integer id);
 
 }
